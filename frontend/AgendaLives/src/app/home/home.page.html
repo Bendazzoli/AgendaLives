@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="calendar-outline"></ion-icon>
+      Agenda de Lives
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="windowCreated == 'previous'">
+    <app-tab-page-previous></app-tab-page-previous>
+  </div>
+  <div *ngIf="windowCreated == 'done'">
+    <app-tab-page-done></app-tab-page-done>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-segment (ionChange)="segmentChanged($event)" color="secondary">
+    <ion-segment-button value="previous">
+      <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
+      <ion-label>Próximas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="done">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <ion-label>Realizadas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>
