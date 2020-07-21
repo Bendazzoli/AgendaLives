@@ -3,18 +3,17 @@ import { Live } from 'src/app/shared/model/live.model';
 import { LiveService } from 'src/app/shared/service/live.service';
 
 @Component({
-    selector: 'app-tab-page-previous',
-    templateUrl: 'tabs-page-previous.component.html'
+    selector: 'app-tab-page-next',
+    templateUrl: 'tabs-page-next.component.html'
 })
-export class TabsPagePreviousComponent implements OnInit{
-    
+export class TabsPageNextComponent implements OnInit{
     public lives: Live[];
 
     constructor(private liveService: LiveService){
         
     }
     ngOnInit(): void {
-        this.liveService.getLivesWithFlag('previous')
+        this.liveService.getLivesWithFlag('next')
         .subscribe(data => {
             this.lives = data.content;
         })

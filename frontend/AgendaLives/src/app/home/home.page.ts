@@ -10,12 +10,12 @@ export class HomePage {
   public windowCreated: string;
 
   constructor() {
-    this.windowCreated = 'previous';
+    this.windowCreated = 'next';
   }
   
   segmentChanged(ev: any) {
     
-    if (ev.detail.value === 'previous'){
+    if (ev.detail.value === 'next'){
       this.windowCreated = ev.detail.value;
     }else{
       this.windowCreated = ev.detail.value;

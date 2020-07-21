@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-import { TabsPageDoneComponent } from './done/tabs-page-done.component';
+import { TabsPageNextComponent } from './next/tabs-page-next.component';
 import { TabsPagePreviousComponent } from './previous/tabs-page-previous.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations:[
-        TabsPageDoneComponent,
+        TabsPageNextComponent,
         TabsPagePreviousComponent
     ],
     exports: [
-        TabsPageDoneComponent,
+        TabsPageNextComponent,
         TabsPagePreviousComponent
     ],
     imports: [
