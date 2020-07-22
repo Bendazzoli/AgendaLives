@@ -50,8 +50,8 @@
         <version>1.9.0</version>  
         <configuration> 
           <schemaVersion>V2</schemaVersion>  
-          <resourceGroup>agendalive-1595280989305-rg</resourceGroup>  
-          <appName>agendalive-1595280989305</appName>  
+          <resourceGroup>agendalive-1595425959312-rg</resourceGroup>  
+          <appName>agendalive-1595425959312</appName>  
           <pricingTier>P1v2</pricingTier>  
           <region>centralus</region>  
           <runtime> 
@@ -59,12 +59,12 @@
             <javaVersion>jre8</javaVersion>  
             <webContainer>jre8</webContainer> 
           </runtime>
-		  <appSettings>
-		  	<property>
-			  <name>JAVA_OPTS</name>
-			  <value>-Dserver.port=80</value>
-			</property>
-		  </appSettings>
+          <appSettings>
+            <property>
+              <name>JAVA_OPTS</name>
+              <value>-Dserver.port=80</value>
+            </property>
+          </appSettings>  
           <deployment> 
             <resources> 
               <resource> 

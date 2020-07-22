@@ -8,7 +8,7 @@ import { ResponsePageable } from '../model/responsePageable.model';
 })
 export class LiveService {
 
-  apiUrl = 'https://banco-agenda-lives.mongo.cosmos.azure.com:443/lives';
+  apiUrl = 'https://agendalive-1595425959312.azurewebsites.net/lives';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
