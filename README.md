@@ -1,8 +1,8 @@
 # AgendaLives
-Repo destinado ao curso de Angular da Michelli Brito, e utilizando a API Spring com deploy na Microsoft Azure
+Repo destinado ao curso de Angular (mas aplicado em Ionic 3) da Michelli Brito, e utilizando a API Spring com deploy na Microsoft Azure
 
 ## Backend
-Na pasta backend se encontra a API Rest para a aplicação frontend em Angular.
+Na pasta backend se encontra a API Rest para a aplicação frontend em Ionic 3.
 - Acessar repositório raiz e executar o comando `mvn clean install` para baixar as dependências.
 
 ### Deploy na Microsoft Azure
@@ -46,5 +46,6 @@ Na pasta backend se encontra a API Rest para a aplicação frontend em Angular.
 * Executar o deploy no Azure: `mvn azure-webapp:deploy`
 
 ## Frontend
-Na pasta frontend se encontra a aplicação de agendas de lives.
+Na pasta frontend se encontra a aplicação de agendas de lives em Ionic 3.
 - Acessar repositório raiz e executar comando `npm install` para baixar as dependências.
+- Subir aplicação local: `ionic serve`.
