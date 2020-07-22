@@ -6,7 +6,6 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { TabsPageModule } from '../tabs-page/tabs-page.module';
-import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({

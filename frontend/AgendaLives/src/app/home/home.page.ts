@@ -20,8 +20,6 @@ export class HomePage {
     }else{
       this.windowCreated = ev.detail.value;
     }
-
-    console.log('Segment changed with window variable', this.windowCreated);
   }
 
 }

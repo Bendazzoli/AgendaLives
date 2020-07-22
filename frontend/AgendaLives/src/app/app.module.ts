@@ -9,13 +9,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { PipesModule } from './shared/pipe/local-datetime.module';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  
+
   entryComponents: [],
   
   imports: [
@@ -23,13 +25,15 @@ import { HttpClientModule } from '@angular/common/http'
     IonicModule.forRoot(), 
     AppRoutingModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    PipesModule
   ],
   
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    LocalDateTimePipe
   ],
   
   bootstrap: [AppComponent]
