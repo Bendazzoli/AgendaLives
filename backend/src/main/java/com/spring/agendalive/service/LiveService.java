@@ -18,9 +18,12 @@ public class LiveService {
 
     public Page<LiveDocument> findAll(Pageable pageable, String flag){
         if(flag != null && flag.equals("next")){
-            return liveRepository.findByLiveDateAfterOrderByLiveDateAsc(LocalDateTime.now(), pageable);
+            //-6 horas, considerando que uma live demore em média 3 horas, então ainda estaria acontecendo 
+            //e, +3 horas de diferença do servidor.
+            return liveRepository.findByLiveDateAfterOrderByLiveDateAsc(LocalDateTime.now().plusHours(-6), pageable);
         }else if(flag != null && flag.equals("previous")){
-            return liveRepository.findByLiveDateBeforeOrderByLiveDateDesc(LocalDateTime.now(), pageable);
+
+            return liveRepository.findByLiveDateBeforeOrderByLiveDateDesc(LocalDateTime.now().plusHours(-6), pageable);
         }else{
             return liveRepository.findAll(pageable);
         }
