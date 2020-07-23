@@ -3,6 +3,9 @@
         <ion-label>{{live.liveName}}</ion-label>
         <ion-card-subtitle>{{live.liveDate | localDateTime}}</ion-card-subtitle>
     </ion-item>
+    <div>
+        <iframe [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <ion-item>
         <ion-card-subtitle>Canal: {{live.channelName}}</ion-card-subtitle>
         <ion-button href={{live.liveLink}} target="_blank" fill="outline" slot="end" size="small" color="secondary">Go to</ion-button>
