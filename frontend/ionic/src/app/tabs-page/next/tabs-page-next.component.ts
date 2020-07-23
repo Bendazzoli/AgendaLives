@@ -19,6 +19,10 @@ export class TabsPageNextComponent implements OnInit{
     }
     
     ngOnInit(): void {
+        this.getLives();
+    }
+
+    getLives(){
         this.liveService.getLivesWithFlag('next')
         .subscribe(data => {
             this.lives = data.content;

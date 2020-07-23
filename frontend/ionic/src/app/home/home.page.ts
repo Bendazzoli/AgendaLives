@@ -6,20 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  
+
   public windowCreated: string;
 
   constructor() {
-    this.windowCreated = 'next';
   }
-  
+
   segmentChanged(ev: any) {
-    
-    if (ev.detail.value === 'next'){
+
+    if (ev.detail.value === 'next') {
       this.windowCreated = ev.detail.value;
-    }else{
+    } else {
       this.windowCreated = ev.detail.value;
     }
   }
-
 }
