@@ -10,6 +10,7 @@ export class HomePage {
   public windowCreated: string;
 
   constructor() {
+    this.windowCreated = 'home';
   }
 
   segmentChanged(ev: any) {

@@ -9,6 +9,9 @@
 </ion-header>
 
 <ion-content>
+  <div *ngIf="windowCreated == 'home'">
+    <app-tab-page-home></app-tab-page-home>
+  </div>
   <div *ngIf="windowCreated == 'next'">
     <app-tab-page-next></app-tab-page-next>
   </div>
